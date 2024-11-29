@@ -17,7 +17,7 @@ routerIndex.get("/", (req, res)=>{
                 personajes : "/api/personaje",
                 personajesUnico : "/api/personaje/unico?id=",
                 planetas : "/api/planeta",
-                planetasUnico : "/api/planeta/unico?id_planeta="
+                planetasUnico : "/api/planeta/unico?id="
             }
         }
     });
