@@ -15,9 +15,9 @@ routerIndex.get("/", (req, res)=>{
             by : "Yeison Mestra",
             routes :{
                 personajes : "/api/personaje",
-                personajesUnico : "/api/personaje/unico",
+                personajesUnico : "/api/personaje/unico?id=",
                 planetas : "/api/planeta",
-                planetasUnico : "/api/planeta/:id_planeta"
+                planetasUnico : "/api/planeta/unico?id_planeta="
             }
         }
     });
