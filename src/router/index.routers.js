@@ -1,10 +1,12 @@
 import{ Router } from "express";
 import routerPersonaje from "./personajes.routers.js";
 import routerPlaneta from "./planetas.routers.js";
+import routerPokemon from "./pokemon.routers.js";
 const routerIndex = Router();
 
 routerIndex.use("/api",routerPersonaje)
 routerIndex.use("/api",routerPlaneta)
+routerIndex.use("/api",routerPokemon)
 
 routerIndex.get("/", (req, res)=>{
     return res.json({
